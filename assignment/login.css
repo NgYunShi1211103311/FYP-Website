@@ -1,25 +1,19 @@
 body {
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #E2DDEA;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.login_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
 .login_box {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 2px solid #70569a;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 30px;
     text-align: center;
     max-width: 350px;
@@ -28,66 +22,60 @@ body {
 
 .logo_container {
     height: 100px;
-    background-color: #ddd;
+    background-color: #d6cae9; 
     margin-bottom: 20px;
     border-radius: 5px;
 }
 
 h1 {
-    margin-bottom: 20px;
-}
-
-form {
-    text-align: left;
+    color: #322743; 
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #322743;
 }
 
 input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #70569a; 
     border-radius: 5px;
-    box-sizing: border-box;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #000000;
+    background-color: #70569a; 
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 button:hover {
-    background-color: #1f281d;
+    background-color: #322743; 
 }
 
 .forgot_password {
     display: block;
     text-align: right;
     margin-bottom: 15px;
-    color:rgb(224, 37, 37);
+    color: #70569a; 
     text-decoration: none;
-}
-
-.forgot_password:hover {
-    text-decoration: underline;
 }
 
 .signup_link a {
     text-decoration: none;
-    color:rgb(38, 0, 255);
+    color: #70569a;
     font-weight: bold;
 }
 
 .signup_link a:hover {
+    color: #322743;
     text-decoration: underline;
 }
