@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Edit Profile</title>
+        <link rel="stylesheet" href="settings.css">
+    </head>
+
+    <body>
+        <div class="sideNav">
+            <a href="#" id="fypPage" class="navTabTittle">FYP Page</a>
+            <br />
+            <br />
+            <nav>
+                <a href="studentdashboard.html" id="dashboard" class="navTab">Dashboard</a>
+                <a href="studentprojectstatus.html" id="project" class="navTab">Project</a>
+                <a href="meetings.html" id="meetings" class="navTab">Meetings</a>
+                <a href="goals.html" id="goals" class="navTab">Goals and Progress</a>
+                <a href="settings.html" id="settings" class="navTab active">Settings</a>
+                <a href="logout.html" id="logout" class="navTab">Log Out</a>
+            </nav>
+        </div>
+
+        <h1>Edit Profile</h1>
+        <div class="container">
+            <form class="editProfile" action="">
+                <div class="nameRow">
+                    <p class="col-50">
+                        <label for="firstName">First Name: </label> 
+                        <input type="text" name="firstName" placeholder="John" required pattern="[A-Za-z]{3,50}" />
+                    </p> 
+
+                    <p class="col-50">
+                        <label for="lastName">Last Name: </label> 
+                        <input type="text" name="lastName" placeholder="Smith" required pattern="[A-Za-z]{3,50}" />
+                    </p>  
+                </div>
+                             
+                <div class="row">
+                    <p class="col-25">
+                        <label for="address">Address: </label>
+                    </p>
+                    <p class="col-75">
+                        <textarea name="address" id="address" cols="30" rows="5" placeholder="456, Elm Street, Suite 3, Los Angeles"></textarea>
+                    </p>
+                </div>
+                
+                <div class="row">
+                    <p class="col-25">
+                        <label for="email">Email: </label>
+                    </p>
+                    <p class="col-75">
+                        <input type="email" id="email" name="email" placeholder="john.smith@gmail.com" required />
+                    </p>
+                </div>
+                
+                <div class="row">
+                    <p class="col-25">
+                        <label for="contactNo">Contact Number: </label>
+                    </p>
+                    <p class="col-75">
+                        <input type="tel" id="contactNo" name="contactNo" placeholder="+1-555-555-1212" required pattern="[0-9]{10}" />
+                    </p>
+                </div>
+                
+                <div class="row">
+                   <p class="col-25">
+                        <label for="password">Password: </label>
+                    </p>
+                    <p class="col-75">
+                        <input type="password" name="password" required pattern="[0-9]{6-8}" />
+                    </p> 
+                </div>
+                
+                <p class="row">
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+    </body>
+</html>

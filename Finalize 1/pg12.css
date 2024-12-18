@@ -1,0 +1,120 @@
+body,h1,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E2DDEA;
+    margin: 50px;
+}
+
+#proposalTitle{
+    text-align: center;
+    background-color: #E2DDEA;
+    width: 1000px;
+    border: 3px solid #322743;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 50px;
+    font-size: larger;
+    text-align: left;
+}
+#description{
+    text-align: center;
+    background-color: #E2DDEA;
+    width: 1500px;
+    height: 100px;
+    border: 3px solid #322743;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 50px;
+    font-size: larger;
+    text-align: left;
+}
+#fileIcon{
+    margin-left: 50px;
+    vertical-align: middle;
+
+}
+nav{
+    font-size: larger;
+}
+#download{
+    background-color: #322743;
+    border: 3px solid #E2DDEA;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 50px;
+
+    color: #E2DDEA;
+    font-style: oblique;
+    text-decoration: none;
+}
+#download:HOVER{
+    background-color: #E2DDEA;
+    border: 3px solid #322743;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 50px;
+
+    color: #322743;
+    font-style: oblique;
+    text-decoration: underline;
+}
+#approve{
+    font-size: x-large;
+    background-color: #2ECF03;
+    border: 3px solid #E2DDEA;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
+
+    color: #E2DDEA;
+    font-style: oblique;
+    text-decoration: none;
+
+    display: inline; float: left;
+}
+#approve:hover{
+    font-size: x-large;
+    background-color: #E2DDEA;
+    border: 3px solid #2ECF03;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
+
+    color: #2ECF03;
+    font-style: oblique;
+    text-decoration: underline;
+
+    display: inline; float: left;
+}
+#decline{
+    font-size: x-large;
+    background-color: #EC204F;
+    border: 3px solid #E2DDEA;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
+
+    color: #E2DDEA;
+    font-style: oblique;
+    text-decoration: none;
+
+    display: inline; float:right
+}
+#decline:hover{
+    font-size: x-large;
+    background-color: #E2DDEA;
+    border: 3px solid #EC204F;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 50px;
+
+    color: #EC204F;
+    font-style: oblique;
+    text-decoration: underline;
+
+    display: inline; float:right
+}
+#comment{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
