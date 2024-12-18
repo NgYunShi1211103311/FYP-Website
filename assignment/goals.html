@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Goals and Progress</title>
+        <link rel="stylesheet" href="goals.css">
+    </head>
+
+    <body>
+        <div class="sideNav">
+            <a href="#" id="fypPage" class="navTabTittle">FYP Page</a>
+            <br />
+            <br />
+            <nav>
+                <a href="#" id="dashboard" class="navTab">Dashboard</a>
+                <a href="project.html" id="project" class="navTab">Project</a>
+                <a href="meetings.html" id="meetings" class="navTab">Meetings</a>
+                <a href="goals.html" id="goals" class="navTab active">Goals and Progress</a>
+                <a href="settings.html" id="settings" class="navTab">Settings</a>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>Goals and Progress</h1>
+
+            <div class="goals">
+                <h2>Goals</h2>
+                <table class="goalTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Complete FYP Proposal</td>
+                            <td>
+                                <select id="status" name="status" required>
+                                    <option value="complete">Complete</option>
+                                    <option value="incomplete">Incomplete</option>
+                                    <option value="working">Working</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Complete Chapter 1</td>
+                            <td>
+                                <select id="status" name="status" required>
+                                    <option value="complete">Complete</option>
+                                    <option value="incomplete">Incomplete</option>
+                                    <option value="working">Working</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Study research papers</td>
+                            <td>
+                                <select id="status" name="status" required>
+                                    <option value="complete">Complete</option>
+                                    <option value="incomplete">Incomplete</option>
+                                    <option value="working">Working</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="addGoal">
+                    <button type="button">Add Goal</button>
+                </p>
+            </div>
+
+            <div class="progress">
+                <h2>Progress</h2>
+                <table class="progressTable">
+                    <thead>
+                        <tr>
+                            <th>Task</th>
+                            <th>Progress</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Complete FYP Proposal</td>
+                            <td>
+                                <div class="progressBarContainer">
+                                    <div class="progressBar" style="height: 24px;width:100%">100%</div>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <td>Complete FYP Proposal</td>
+                            <td>
+                                <div class="progressBarContainer">
+                                    <div class="progressBar" style="height: 24px;width:90%">90%</div>
+                                </div>
+                            </td>
+
+                        <tr>
+                            <td>Study research paper</td>
+                            <td>
+                                <div class="progressBarContainer">
+                                    <div class="progressBar" style="height: 24px;width:50%">50%</div>
+                                </div>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </body>
+</html>
