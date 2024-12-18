@@ -1,16 +1,16 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     overflow-x: hidden;
+    background-color: #E2DDEA;
 }
 
-/* Sidebar styles */
 .sidebar {
     width: 20%;
-    background-color: #f4f4f4;
+    background-color: #322743;
+    color: #fff;
     height: 100vh;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -23,11 +23,12 @@ body {
     text-align: center;
     font-size: 24px;
     margin-bottom: 10px;
+    color: #E2DDEA;
 }
 
 .sidebar hr {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #d6cae9;
 }
 
 .sidebar ul {
@@ -42,7 +43,7 @@ body {
 .sidebar ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: #000;
+    color: #E2DDEA;
     display: block;
     padding: 10px 15px;
     border-radius: 5px;
@@ -50,51 +51,65 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: #ddd;
+    background-color: #d6cae9;
 }
 
-/* Main content styles */
 .student_projectstatus {
-    margin-left: 22%; /* Space for the sidebar */
+    margin-left: 22%;
     padding: 20px;
-    margin-top: 50px;
+    text-align: center;
+    width: 75%;
 }
 
 .student_projectstatus h1 {
     margin-bottom: 20px;
+    font-size: 36px;
+    color: #322743;
+    text-align: center;
 }
 
-/* Table styles */
-.project-table {
+.projecttable {
+    margin: 0 auto;
     width: 100%;
+    max-width: 1200px;
     border-collapse: collapse;
     margin-bottom: 20px;
-    text-align: left;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.project-table thead {
-    background-color: #f4f4f4;
+.projecttable thead {
+    background-color: #70569a;
+    color: #E2DDEA;
 }
 
-.project-table th, .project-table td {
+.projecttable th,td {
     border: 1px solid #ddd;
-    padding: 10px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 18px;
 }
 
-.project-table th {
+.projecttable th {
     font-weight: bold;
+    text-transform: uppercase;
 }
 
-.project-table tbody tr:nth-child(even) {
+.projecttable tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-/* Status styles */
+.projecttable tbody tr:hover {
+    background-color: #d6cae9;
+    cursor: pointer;
+}
+
 .status {
     text-align: center;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     color: white;
 }
@@ -111,8 +126,7 @@ body {
     background-color: #F44336;
 }
 
-/* Add button styles */
-.add-button {
+.addbutton {
     background-color: #007BFF;
     color: white;
     border: none;
@@ -129,6 +143,6 @@ body {
     line-height: 50px;
 }
 
-.add-button:hover {
+.addbutton:hover {
     background-color: #0056b3;
 }
