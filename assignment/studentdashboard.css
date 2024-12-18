@@ -1,16 +1,16 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     overflow-x: hidden;
+    background-color: #E2DDEA;
 }
 
-/* Sidebar styles */
 .sidebar {
     width: 20%;
-    background-color: #f4f4f4;
+    background-color: #322743;
+    color: #fff;
     height: 100vh;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -23,11 +23,12 @@ body {
     text-align: center;
     font-size: 24px;
     margin-bottom: 10px;
+    color: #E2DDEA;
 }
 
 .sidebar hr {
     margin-bottom: 20px;
-    border: 1px solid #ccc;
+    border: 1px solid #d6cae9;
 }
 
 .sidebar ul {
@@ -42,7 +43,7 @@ body {
 .sidebar ul li a {
     text-decoration: none;
     font-size: 18px;
-    color: #000;
+    color: #E2DDEA;
     display: block;
     padding: 10px 15px;
     border-radius: 5px;
@@ -50,28 +51,28 @@ body {
 }
 
 .sidebar ul li a:hover {
-    background-color: #ddd;
+    background-color: #d6cae9;
 }
 
-/* Main content styles */
 .student_announcement {
-    margin-left: 22%; /* Reserve space for the sidebar */
+    margin-left: 22%;
     padding: 20px;
-    width: 78%; /* Ensure alignment with sidebar */
+    width: 78%;
 }
 
 .announcement-section h1 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #322743;
 }
 
 .announcement {
     background-color: #fff;
-    border: 1px solid #ccc;
+    border: 2px solid #70569a;
     border-radius: 10px;
     padding: 30px;
     font-size: 18px;
-    color: #666;
+    color: #322743;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     margin-top: 20px;
