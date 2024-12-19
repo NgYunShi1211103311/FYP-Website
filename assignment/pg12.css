@@ -5,7 +5,6 @@ body,h1,h2{
 }
 
 #proposalTitle{
-    text-align: center;
     background-color: #E2DDEA;
     width: 1000px;
     border: 3px solid #322743;
@@ -16,7 +15,6 @@ body,h1,h2{
     text-align: left;
 }
 #description{
-    text-align: center;
     background-color: #E2DDEA;
     width: 1500px;
     height: 100px;
@@ -58,6 +56,10 @@ nav{
     text-decoration: underline;
 }
 #approve{
+    width: 15%;
+    box-sizing: border-box;
+    text-align: center;
+
     font-size: x-large;
     background-color: #2ECF03;
     border: 3px solid #E2DDEA;
@@ -72,6 +74,10 @@ nav{
     display: inline; float: left;
 }
 #approve:hover{
+    width: 15%;
+    box-sizing: border-box;
+    text-align: center;
+
     font-size: x-large;
     background-color: #E2DDEA;
     border: 3px solid #2ECF03;
@@ -86,6 +92,10 @@ nav{
     display: inline; float: left;
 }
 #decline{
+    width: 15%;
+    box-sizing: border-box;
+    text-align: center;
+
     font-size: x-large;
     background-color: #EC204F;
     border: 3px solid #E2DDEA;
@@ -97,9 +107,13 @@ nav{
     font-style: oblique;
     text-decoration: none;
 
-    display: inline; float:right
+    display: block; float:right
 }
 #decline:hover{
+    width: 15%;
+    box-sizing: border-box;
+    text-align: center;
+
     font-size: x-large;
     background-color: #E2DDEA;
     border: 3px solid #EC204F;
@@ -111,10 +125,14 @@ nav{
     font-style: oblique;
     text-decoration: underline;
 
-    display: inline; float:right
+    display: block; float:right
 }
+
+
 #comment{
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    width: 90%;
+    margin: auto;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    display: block;
 }
