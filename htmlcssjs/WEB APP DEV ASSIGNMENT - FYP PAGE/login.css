@@ -9,6 +9,14 @@ body {
     height: 100vh;
 }
 
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
 .login_box {
     background-color: #fff;
     border: 2px solid #70569a;
@@ -22,13 +30,22 @@ body {
 
 .logo_container {
     height: 100px;
-    background-color: #d6cae9; 
+    background-color: #d6cae9;
     margin-bottom: 20px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-height: 100%;
+    max-width: 100%;
 }
 
 h1 {
-    color: #322743; 
+    color: #322743;
+    margin-bottom: 20px;
 }
 
 label {
@@ -42,31 +59,38 @@ input {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #70569a; 
+    border: 1px solid #70569a;
     border-radius: 5px;
+    font-size: 14px;
 }
 
 button {
     width: 100%;
     padding: 10px;
-    background-color: #70569a; 
+    background-color: #70569a;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #322743; 
+    background-color: #322743;
 }
 
 .forgot_password {
     display: block;
     text-align: right;
     margin-bottom: 15px;
-    color: #70569a; 
+    color: #70569a;
     text-decoration: none;
+    font-size: 14px;
+}
+
+.signup_link {
+    font-size: 14px;
 }
 
 .signup_link a {
