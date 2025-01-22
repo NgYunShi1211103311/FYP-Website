@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Goals and Progress</title>
+    <link rel="stylesheet" href="addgoalandprogress.css">
+    <script>
+        function addGoal() {
+            const goalsContainer = document.getElementById('goals_container');
+
+            const goalDiv = document.createElement('div');
+            goalDiv.classList.add('goal_section');
+
+            goalDiv.innerHTML = `
+                <h3>Goal</h3>
+                <div class="form_group">
+                    <label for="goal_name">Goal Name:</label>
+                    <input type="text" name="goal_name[]" placeholder="Enter goal name" required>
+                </div>
+                <div class="progress_container">
+                    <h4>Progress</h4>
+                    <div class="task_container">
+                        <div class="form_group">
+                            <label for="task_name">Task Name:</label>
+                            <input type="text" name="task_name[]" placeholder="Enter task name" required>
+                        </div>
+                    </div>
+                    <button type="button" class="add_task_button" onclick="addTask(this)">Add Progress</button>
+                </div>
+                <button type="button" class="remove_button" onclick="removeGoal(this)">Remove Goal</button>
+                <hr>
+            `;
+
+            goalsContainer.appendChild(goalDiv);
+        }
+
+        function addTask(button) {
+            const taskContainer = button.previousElementSibling;
+
+            const taskDiv = document.createElement('div');
+            taskDiv.classList.add('form_group');
+            taskDiv.innerHTML = `
+                <label for="task_name">Task Name:</label>
+                <input type="text" name="task_name[]" placeholder="Enter task name" required>
+            `;
+
+            taskContainer.appendChild(taskDiv);
+        }
+
+        function removeGoal(button) {
+            const goalDiv = button.parentNode;
+            goalDiv.remove();
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Add Goals and Progress</h1>
+
+        <form action="save_goals_progress.php" method="POST">
+            <div id="goals_container">
+                <div class="goal_section">
+                    <h3>Goal</h3>
+                    <div class="form_group">
+                        <label for="goal_name">Goal Name:</label>
+                        <input type="text" name="goal_name[]" placeholder="Enter goal name" required>
+                    </div>
+                    <div class="progress_container">
+                        <h4>Progress</h4>
+                        <div class="task_container">
+                            <div class="form_group">
+                                <label for="task_name">Task Name:</label>
+                                <input type="text" name="task_name[]" placeholder="Enter task name" required>
+                            </div>
+                        </div>
+                        <button type="button" class="add_task_button" onclick="addTask(this)">Add Progress</button>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="add_button" onclick="addGoal()">Add Another Goal</button>
+            <div class="actions">
+                <button type="submit" class="btn">Save</button>
+                <button type="reset" class="btn">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

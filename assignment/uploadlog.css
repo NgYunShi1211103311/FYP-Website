@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #E2DDEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    border: 2px solid #70569a;
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2 {
+    color: #322743;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.uploaded_logs {
+    margin-bottom: 30px;
+}
+
+.uploaded_logs ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.uploaded_logs li {
+    margin-bottom: 10px;
+}
+
+.uploaded_logs a {
+    color: #70569a;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.uploaded_logs a:hover {
+    text-decoration: underline;
+    color: #322743;
+}
+
+.form_group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #322743;
+}
+
+input[type="text"], input[type="date"], input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #70569a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="file"] {
+    padding: 5px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    background-color: #70569a;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 45%;
+}
+
+.btn:hover {
+    background-color: #322743;
+}
