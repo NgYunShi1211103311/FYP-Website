@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+    background-color: #f7f8f5;
+    line-height: 1.6;
+    
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #322743;
+    padding: 10px 50px;
+    z-index: 1000;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  nav .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #9B90A1;
+  }
+
+  /* About Section */
+  .about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 10%; /* Center the section vertically */
+    background-color:#E2DDEA ;
+    margin-top: 60px;
+    margin-bottom: 0;
+    
+  
+  }
+
+  .about-image {
+    flex: 1;
+    background: url('./Images/Aboutus.jpg') no-repeat center center / cover;
+    margin-right: 50px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    height: 225px;
+  }
+
+  .text-content {
+    flex: 1;
+    max-width: 600px;
+  }
+
+  .text-content h1 {
+    color:  black;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  .text-content p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color:  black;
+  }
+
+  Footer {
+    background-color: #322743;
+    padding: 10px 10%; 
+
+  }
+
+  .stats {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .item {
+    flex: 1;
+  }
+
+  .icon {
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .item p strong {
+    font-size: 20px;
+  
+  }
+
+  .item p {
+    color: #e3dcc8;
+  }
+
+ 
+    .stats {
+      flex-direction: row;
+    }

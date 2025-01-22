@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Meetings Management</title>
+        <link rel="stylesheet" href="meetings.css">
+    </head>
+
+    <body>
+        <div class="sideNav">
+            <a href="#" id="fypPage" class="navTabTittle">FYP Page</a>
+            <br />
+            <br />
+            <nav>
+                <a href="studentdashboard.html" id="dashboard" class="navTab">Dashboard</a>
+                <a href="studentprojectstatus.html" id="project" class="navTab">Project</a>
+                <a href="meetings.html" id="meetings" class="navTab active">Meetings</a>
+                <a href="goals.html" id="goals" class="navTab">Goals and Progress</a>
+                <a href="settings.html" id="settings" class="navTab">Settings</a>
+                <a href="logout.html" id="logout" class="navTab">Log Out</a>
+            </nav>
+        </div>
+
+        <section>
+            <h1>Meetings Management</h1>
+            <div id="content">
+                <form class="meetingManagement" action="">
+                    <h3>Schedule New Meeting</h3>
+
+                    <div class="row">
+                        <p class="col-25">
+                            <label for="date">Date: </label>
+                        </p>
+                        <p class="col-75">
+                            <input type="date" name="date" id="date" required />
+                        </p>
+                    </div>
+                    
+                    <div class="row">
+                        <p class="col-25">
+                            <label for="time">Time: </label>
+                        </p>
+                        <p class="col-75">
+                            <input type="time" name="time" id="time" required />
+                        </p>
+                    </div>
+                    
+                    <div class="row">
+                        <p class="col-25">
+                            <label for="supervisor">Supervisor: </label>
+                        </p>
+                        <p class="col-75">
+                            <select id="supervisor" name="supervisor" required>
+                                <option value="JohnDoe">John Doe</option>
+                                <option value="JaneSmith">Jane Smith</option>
+                                <option value="MikeBrown">Mike Brown</option>
+                                <option value="EmilyClark">Emily Clark</option>
+                            </select>
+                        </p>
+                    </div>
+        
+                    <p class="row">
+                        <input type="submit" value="Submit">
+                    </p>
+                </form>
+            </div>
+        </section>
+        
+        <aside>
+            <div class="meetings">
+                <a href="pg14.html">
+                    <h3>Upcoming Meetings</h3>
+                </a>
+                <ul id="meetingList">
+                    
+                </ul>
+            </div>
+
+            <div class="meetings">
+                <h3>Meeting Logs</h3>
+                <ul id="logList">
+                    
+                </ul>
+            </div>
+        </aside>
+    </body>
+</html>

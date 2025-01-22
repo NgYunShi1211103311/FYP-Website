@@ -1,0 +1,85 @@
+  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:  #E2DDEA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Calendar Container */
+        .calendar-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 700px;
+            border: 1px solid #ccc;
+        }
+
+        /* Header */
+        h2 {
+            margin-top: 0;
+        }
+
+        .new-meeting {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        .new-meeting span {
+            margin-left: 5px;
+        }
+
+      
+        .calendar-section {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            width: 65%;
+            gap: 1px;
+            border: 1px solid #ccc;
+        }
+
+        .calendar div {
+            text-align: center;
+            line-height: 50px;
+            font-size: 14px;
+            background-color: #fff;
+            border: 1px solid #322743;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            outline: none; 
+        }
+
+
+        .calendar .header {
+            font-weight: bold;
+            background-color:#322743;
+            color: #fff;
+            cursor: default;
+        }
+
+      
+        .calendar div:focus {
+            background-color: #322743;
+            color: #fff;
+        }
+
+        .upcoming-meetings {
+            width: 30%;
+            border: 1px solid #322743;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+            font-weight: bold;
+        }
